@@ -6,4 +6,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["./entrypoint.sh", "${CONFIRMATION_CODE}", "${FIRST_NAME}", "${LAST_NAME}"]
+ENTRYPOINT ["./entrypoint.sh", "$CONFIRMATION_CODE", "$FIRST_NAME", "$LAST_NAME"]
